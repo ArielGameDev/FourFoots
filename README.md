@@ -7,7 +7,7 @@
   משחק מולטי פלייר של 3-4 צמדים
   הצמד הראשון שמגיע לעשר נקודות מנצח את המשחק
   
-[הסבר המשחק] (Four Foots.pdf)
+[הסבר המשחק] (https://github.com/ArielGameDev/Four-Foots/blob/main/Four%20Foots.pdf)
 
 
 </div>
