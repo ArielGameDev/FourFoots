@@ -1,4 +1,4 @@
-# Four-Foots
+# Four Foots 
 <div lang="he" dir="rtl">
   פרויקט קורס פיתוח משחקי מחשב.
   
