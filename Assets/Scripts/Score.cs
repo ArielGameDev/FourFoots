@@ -29,7 +29,7 @@ public class Score : MonoBehaviour
             if (ballMaterial.color == Color.red) RedScore();
             if (ballMaterial.color == Color.blue) BlueScore();
             BallReset();
-            GameOver();
+            CheckIfGameOver();
         }
     }
     void Start()
@@ -80,13 +80,13 @@ public class Score : MonoBehaviour
     private void StartText()
     {
         this.start.gameObject.SetActive(true);
-        Invoke("DisableStartText", 3f);
+        Invoke("DisableStartText", 4f);
     }
     private void DisableStartText()
     {
         this.start.gameObject.SetActive(false);
     }
-    private void GameOver()
+    private void CheckIfGameOver()
     {
         if(redScore == 3)
             SceneManager.LoadScene(redWinScene);
