@@ -12,7 +12,6 @@ public class Movement1 : MonoBehaviour
     private float minusOne = -1f;
     private float gravity = -10f;
     private Vector3 velocity;
-
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -33,9 +32,8 @@ public class Movement1 : MonoBehaviour
             moveDirection = transform.TransformDirection(moveDirection);
             controller.Move(moveDirection * Time.deltaTime);
         }
-       
         if (Input.GetKey(KeyCode.D)) transform.Rotate(Vector3.up, rotate);
-        else if (Input.GetKey(KeyCode.A)) transform.Rotate(Vector3.up, -rotate);
+        if (Input.GetKey(KeyCode.A)) transform.Rotate(Vector3.up, -rotate);
         velocity.y += gravity * moveSpeed * Time.deltaTime;
         controller.Move(velocity);
         

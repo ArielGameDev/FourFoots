@@ -18,20 +18,20 @@ public class Movement2 : MonoBehaviour
     }
     private void Update()
     {
-        moveDirection = new Vector3(0,0,plusOne);
+        float rotate = sensitivity * Time.deltaTime;
+        moveDirection = new Vector3(0, 0, plusOne);
         moveDirection *= moveSpeed;
         if (Input.GetKey(KeyCode.UpArrow))
         {
             moveDirection = transform.TransformDirection(moveDirection);
             controller.Move(moveDirection * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
-            moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= minusOne;
+            moveDirection = transform.TransformDirection(moveDirection);
             controller.Move(moveDirection * Time.deltaTime);
         }
-        float rotate = sensitivity * Time.deltaTime;
         if (Input.GetKey(KeyCode.RightArrow)) transform.Rotate(Vector3.up, rotate);
         if (Input.GetKey(KeyCode.LeftArrow)) transform.Rotate(Vector3.up, -rotate);
         velocity.y += gravity * moveSpeed * Time.deltaTime;
