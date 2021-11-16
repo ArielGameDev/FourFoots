@@ -425,7 +425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -323, y: 147}
+  m_AnchoredPosition: {x: -283, y: 43.39}
   m_SizeDelta: {x: 155.82, y: 86.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &122187197
@@ -3991,7 +3991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -323, y: -147}
+  m_AnchoredPosition: {x: -283, y: -43.39}
   m_SizeDelta: {x: 155.8133, y: 86.7808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061702993
@@ -4016,8 +4016,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 36
-    m_FontStyle: 0
+    m_FontSize: 30
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 128
@@ -4027,7 +4027,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u2191\n\u2190 \u2193 \u2192"
+  m_Text: Keyboard Arrows
 --- !u!222 &2061702994
 CanvasRenderer:
   m_ObjectHideFlags: 0
